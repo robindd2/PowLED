@@ -1,0 +1,848 @@
+* {
+
+ margin: 0;
+
+ padding: 0;
+
+ box-sizing: border-box;
+
+}
+
+
+
+body {
+
+font-family: "Lato", sans-serif;
+
+}
+
+
+
+.nav {
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+ padding: 20px 40px;
+
+}
+
+
+
+.logo {
+
+ height: 90px;
+
+}
+
+
+
+.card1 {
+
+ font-weight: 900;
+
+ font-style: normal;
+
+ display: flex;
+
+ width: 100%;
+
+ height: 700px;
+
+ align-items: center;
+
+ justify-content: center;
+
+ text-align: center;
+
+ color: rgb(255, 255, 255);
+
+ font-size: 5.0rem;
+
+ object-fit: cover;
+
+ position: relative;
+
+ background-image: linear-gradient(
+
+   0deg,
+
+   rgba(0, 0, 0, 0.7),
+
+   rgba(0, 0, 0, 0.7)
+
+  ),
+
+  url("https://iluminet.com/newpress/wp-content/uploads/2022/01/luzneon-02.jpg");
+
+ background-size: cover;
+
+ background-position: center center, 0px -180px;
+
+ background-repeat: no-repeat;
+  
+
+}
+
+
+.card1 p{
+
+filter: drop-shadow(0px 0px 5px rgb(251, 255, 0));
+
+}
+
+button {
+
+ background-color: #ffffff;
+
+ font-size: 27px;
+
+ font-weight: 600;
+
+ padding: 8px 25px;
+
+ border-radius: 25px;
+
+ color: #070607;
+
+ cursor: pointer;
+
+ border: 4px solid #000000;
+
+ font-family: Helvetica, sans-serif;
+
+ line-height: 1.5;
+
+ margin-top: 170px;
+
+ transition: all 0.3s ease;
+
+}
+
+
+
+button:hover {
+
+ box-shadow: 0px 0px 25px rgb(230, 244, 75);
+
+ background-color: #dfff40;
+
+ border: 4px solid rgb(0, 0, 0);
+
+}
+
+
+
+.carrusel {
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+ padding: 70px 20px 10;
+
+ overflow: hidden;
+
+ width: 100%;
+
+ height: 90vh;
+
+ gap: 20px;
+
+}
+
+
+
+.contenido-carrusel {
+
+ display: flex;
+
+ width: 60%;
+
+
+
+ height: 500px;
+
+ background-color: #ffffff;
+
+ border-radius: 15px;
+
+ overflow: hidden;
+
+ box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.imagenes {
+
+ flex: 1;
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+ overflow: hidden;
+
+ padding: 20px;
+
+}
+
+
+
+.img {
+
+ width: 80%;
+
+ height: auto;
+
+ max-height: 80%;
+
+ object-fit: contain;
+
+ filter: saturate(150%);
+
+}
+
+
+
+.texto {
+
+
+
+ flex: 1;
+
+ color: rgb(0, 0, 0);
+
+ padding: 40px;
+
+ font-style: italic;
+
+ font-weight: 600;
+
+ font-size: 1.6rem;
+
+ display: flex;
+
+ flex-direction: column;
+
+ justify-content: center;
+
+ align-items: flex-start;
+
+ text-align: right;
+
+}
+
+
+
+.texto h3 {
+
+ margin-bottom: 140px;
+
+ font-family: "Lato", sans-serif;
+
+ font-weight: 900;
+
+ text-align: left;
+
+ font-style: normal;
+
+ font-size: 2.8rem;
+
+ line-height: 1;
+
+}
+
+
+
+.texto p {
+
+  width: 100%;
+
+ text-align: right;
+
+}
+
+
+
+
+
+.atras{
+     cursor: pointer;
+     margin-right: 80px;
+}
+
+.adelante {
+
+ cursor: pointer;
+margin-left: 80px;
+}
+
+
+
+.img-fle {
+
+ width: 60px;
+
+ height: 60px;
+
+ stroke: #000000;
+
+ transition: all 0.2s ease-in-out;
+
+ filter: drop-shadow(7px 1px 4px rgb(223, 255, 64));
+
+}
+
+
+
+.img-fle:hover {
+
+ stroke: #000000;
+
+ filter: drop-shadow(10px 0px 10px rgba(223, 255, 64, 1));
+
+ transform: scale(1.2);
+
+}
+
+
+
+.atras:hover .img-fle {
+
+ transform: translateX(-8px) scale(1.2);
+
+}
+
+
+
+.adelante:hover .img-fle {
+
+ transform: translateX(8px) scale(1.2);
+
+}
+
+
+
+
+
+
+
+.puntos-navegacion {
+
+ width: 100%;
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+ gap: 15px;
+
+ position: relative;
+
+ z-index: 10;
+
+ margin-top: -80px;
+
+}
+
+
+
+.punto {
+
+ width: 18px;
+
+ height: 18px;
+
+ background-color: #000000;
+
+ border-radius: 50%;
+
+ cursor: pointer;
+
+ transition: all 0.3s ease;
+
+}
+
+
+
+.punto:hover {
+
+ background-color: #fffb00;
+
+}
+
+
+
+.punto-activo {
+
+ background-color:#fbff00;
+
+ transform: scale(1.3);
+
+ box-shadow: 0px 0px 15px rgba(223, 255, 64, 0.81);
+
+}
+
+
+
+.productos{
+
+ margin-top: 120px;
+
+ text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+ width: 100%;
+
+ height: 2000px;
+
+ background-color: rgb(255, 255, 255);
+
+}
+
+
+
+.productos h1{
+
+  font-family: "Lato", sans-serif;
+
+   font-style: italic;
+
+ font-weight: 600;
+
+ font-size: 4rem;
+
+}
+
+
+
+.producto{
+
+ margin-top: 100px;
+
+ width: 100%;
+
+ height: 800px;
+
+ background-color: #ffffff;
+
+ display: flex;
+
+ align-items: center;
+
+ justify-content: center;
+
+ text-align: center;
+
+ gap: 150px;
+
+ margin-bottom: 120px;
+  
+
+}
+
+
+
+
+
+.p{
+
+ box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+
+ width: 22%;
+
+ height:900px;
+
+ border-radius: 25px;
+
+background: linear-gradient(180deg, rgb(253, 253, 253), rgb(253, 253, 253), rgb(253, 253, 253), rgb(253, 253, 253), #ecf1a5, #ebfc02);
+
+margin-top: 50px;
+
+ display: flex;
+
+ flex-direction: column;
+
+ overflow: hidden;
+
+ 
+
+}
+
+
+
+ 
+
+.imgp{
+
+height: 55%;
+
+width: 100%;
+
+overflow: hidden;
+
+border-top-left-radius: 25px;
+
+border-top-right-radius: 25px;
+
+}
+
+
+
+.imgp img{
+
+  width: 100%;
+
+  height: 100%;
+
+
+
+}
+
+.p5{
+    height: 230%;
+}
+
+
+
+h2{
+
+ font-family: "Lato", sans-serif;
+
+ font-weight: 900;
+
+  font-style: italic;
+
+}
+
+
+
+.textop {
+
+margin-top: -40px;
+ align-items: center;
+
+ flex: 1;
+
+ color: rgb(0, 0, 0);
+
+ padding: 70px;
+
+ font-style: italic;
+
+ font-weight: 600;
+
+ font-size: 1.35rem;
+
+ display: flex;
+
+ flex-direction: column;
+
+ justify-content: center;
+
+text-align: center;
+
+
+
+}
+
+
+
+.textop p{
+
+ text-align: justify;
+
+ margin-top: 40px;
+
+
+
+}
+
+
+
+.textop button {
+
+ background-color: #ffffff;
+
+ font-size: 22px;
+
+ font-weight: 600;
+
+ padding: 5px 28px;
+
+ border-radius: 20px;
+
+ color: #070607;
+
+ cursor: pointer;
+
+ border: 3.5px solid #000000;
+
+
+ line-height: 1.5;
+
+ margin-top: 70px;
+
+ transition: all 0.3s ease;
+
+}
+
+
+
+.textop button:hover {
+
+ box-shadow: 0px 0px 25px rgb(0, 0, 0);
+
+ background-color: #000000;
+
+ color: azure;
+
+ border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+
+ padding-top: 300px;
+
+ padding-bottom: 50px;
+
+}
+
+
+
+footer .container {
+
+ height: auto;
+
+ display: flex;
+
+ justify-content: center;
+
+ align-items: center;
+
+}
+
+
+
+footer p {
+
+ padding: 20px;
+
+ color: rgb(100, 100, 100);
+
+}
+
+
+
+@media (max-width: 768px) {
+ 
+    body {
+        font-size: 14px;
+    }
+
+    .nav {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        height: 55px;
+    }
+
+ 
+    .card1 {
+        height: 400px;
+        background-position: center center;
+    }
+
+    .card1 p{
+        font-size: 2.2rem;
+    }
+
+
+    
+    .carrusel {
+        flex-direction: column;
+        height: auto;
+        padding: 80px 0px 50px 0px;
+        gap: 20px;
+    }
+
+    .contenido-carrusel {
+        flex-direction: column;
+        height: auto;
+        max-width: 65%; 
+        margin: 0 auto;
+        padding-bottom: 20px; 
+    }
+
+    .atras,
+    .adelante {
+        display: none;
+    }
+
+    .imagenes {
+        padding: 10px;
+        height: 100px; 
+    }
+
+    .img {
+        width: 35%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .texto { 
+        padding: 20px;
+        font-size: 0.95rem; 
+        text-align: justify; 
+        align-items: flex-start; 
+        box-sizing: border-box; 
+        width: 100%; 
+    }
+    
+    .texto h3,
+    .texto p {
+        text-align: justify; 
+        width: 100%; 
+    }
+
+    .texto h3 {
+      margin-top: 10px;
+        margin-bottom: 30px;
+   
+        
+    }
+
+   
+    .productos {
+        margin-top: 80px;
+        height: 4500px;
+        padding-bottom: 50px;
+    }
+
+    .productos h1 {
+      font-size: 2.5rem;
+    }
+
+
+   
+
+    .producto {
+     
+        flex-direction: column;
+        height: auto;
+        padding: 0 60px;
+        margin-bottom: 60px;
+    }
+
+    .productos .p {        
+      
+        margin-top: -10px;
+        width: 90%; 
+        max-width: 450px; 
+        height: auto;
+        margin-bottom: -50px; 
+        padding-bottom: 20px;
+    }
+
+    .imgp {
+        height: 250px; 
+    }
+
+    .p .textop {
+        padding: 15px;
+    }
+
+    .p .textop h2 {
+      margin-top: 30px;
+        font-size: 1.5rem; 
+    }
+
+    .p .textop p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .p .textop button {
+        margin-top: 20px;
+        font-size: 16px;
+        padding: 5px 28px;
+    }
+
+    footer {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .puntos-navegacion {
+    
+         margin-top: -10px;
+    }
+
+
+
+
+    .card1 {
+   
+        height: 450px;
+    }
+
+    .card1 button {
+        margin-top: 80px;
+        font-size: 15px;
+        padding: 8px 25px;
+    }
+
+
+    
+    .img {
+        width: 90%; 
+    }
+
+
+    .texto h3 {
+      text-align: center;
+        font-size: 1.2rem; 
+        font-weight: 900;
+    }
+
+    .texto p {
+             text-align: justify; 
+        font-size: 1.1rem; 
+    }
+    
+   
+
+    .imgp {
+border-radius: 17px 0px 0px 0px;
+        height: 90%; 
+    }
+
+    .punto{
+        width: 12px;
+        height: 12px;
+    }
+}
